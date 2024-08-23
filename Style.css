@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+    @font-face {
+    font-family: "Oswald";
+    src: url(Oswald-VariableFont_wght.ttf);
+    }
+
+    @font-face{
+    font-family: "Pixel";
+    src:url(Jersey10-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Light";
+    src:url(MPLUSRounded1c-Light.ttf);
+}
+
+body{
+    margin-top: 0px;
+    margin: 0px;
+}
+.Headertxt {
+    display: block;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 50px;
+    font-family: Oswald;
+    letter-spacing: 1px;
+    color: #ffffff;
+    transition: 0.5s;
+    animation: float 2s ease-in-out infinite;
+    
+}
+.Headertxt:hover{
+    font-size: 55px;
+}
+
+.Headertxt2 {
+    display: block;
+    text-align: center;
+    padding-left: 20px;
+    font-size: 30px;
+    font-family: Oswald;
+    letter-spacing: 1px;
+    color: #ffffff;
+    transition: 0.5s;
+    animation: float 2s ease-in-out infinite;
+}
+
+.Headertxt2:hover{
+    font-size: 35px;
+}
+
+.NavHeader{
+    background-color: #00a2ff;
+    height: 50vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+.TopNav{
+    background-color: #000000;
+    display:flex;
+    height: 15vh;
+    width: 100%;
+    justify-content: left;
+    align-items: left;
+}
+.LogoIMG{
+    padding-left: 20px;
+    transition: 1s;
+}
+.LogoIMG:hover{
+    padding-left: 50px;
+    .LogoTXT{
+        font-size: 20px;
+    }
+}
+.LogoTXT{
+    font-size: 4vh;
+    font-family: Oswald;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    padding: 2vh;
+    
+}
+
+
+.Information1{
+    padding: 20px;
+    text-align: center;
+    padding-left: 20px;
+    font-size: 25px;
+    font-family: light;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.Information2{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-family:"Light";
+    letter-spacing: 0px;
+    color: #000000;
+}
+.PainterIMG{
+display: inline-block;
+height: auto;
+width: 50vh;
+animation: float 2s ease-in-out infinite;
+}
+.TextBox{
+    display: inline-block;
+    text-wrap: wrap;
+}
+.Antes1{
+    padding: 40px;
+    padding-right: 200px;
+    height: 500px;
+    flex-wrap: nowrap;
+}
+.Depois1{
+    padding-left: 200px;
+    padding: 40px;
+    height: 500px;
+    flex-wrap: nowrap;
+}
+.IMGbox{
+    background-color: #00a2ff;
+    justify-content:center ;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+@keyframes float{
+    0%,100%{
+        transform:translatey(0)
+    }
+    50%{
+        transform:translatex(-10px)
+    }
+}
+
+@keyframes floatY{
+    0%,100%{
+        transform:translatey(0)
+    }
+    50%{
+        transform:translatey(-10px)
+    }
+}    
+.IMGtext{
+    background-color: #ffffff;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    text-wrap: wrap;
+}
+.AntesTXT{
+    font-size: 50px;
+    font-family: oswald;
+    letter-spacing: 1px;
+    color: #000000;
+    transition: 0.5s;
+    padding-right: 220px;
+}
+.DepoisTXT{
+    font-size: 50px;
+    font-family: oswald;
+    letter-spacing: 1px;
+    color: #000000;
+    transition: 0.5s;
+    padding-left: 220px;
+}
+.MeioTXT{
+    display: none;
+}
+.ColorInformation{
+        padding: 20px;
+        text-align: center;
+        padding-left: 20px;
+        font-size: 30px;
+        font-family: oswald;
+        letter-spacing: 1px;
+        color: #ffffff;
+        background-color: #00a2ff;
+}
+.ColorInformation2{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-family:"light";
+    letter-spacing: 0px;
+    color: #000000;
+}
+.Btn1{
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 500px;
+    background-color: #007000;
+    border-radius: 20px;
+    border-width: 0px;
+    border-color: #ffffff;
+    transition: 0.5s;
+    animation: floatY 2s ease-in-out infinite;
+}
+.BtnTXT{
+    font-size: 25px;
+    font-family: oswald;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.Btn1:hover{
+    background-color: #00a2ff;
+    height: 100px;
+    width: 600px;
+}
+.Btn1:active{
+    background-color: #ffffff;
+
+}
+.GridBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001625;
+    flex-wrap: wrap;
+}
+.Vdo{
+    padding: 100px;
+}
+
+.GridIMG{
+    padding: 30px;
+}
+
+@media screen and (max-width: 1020px){
+    body{
+        margin: 0 auto;
+    }
+    .TextBox{
+        display: none;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .Btn1{
+        width: 300px;
+        height: 120px;
+    }
+    .Btn1:hover{
+        background-color: #00a2ff;
+        height: 150px;
+        width: 350px;
+    }
+    .IMGtext{
+        align-items: center;
+    }
+    .Antes1,.Depois1{
+        width: auto;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 200px;
+    }
+    .IMGbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AntesTXT,.DepoisTXT,.MeioTXT{
+        display: flex;
+        padding: 5px;
+        font-size: 40px;
+        font-family: light;
+    }
+    .LogoTXT{
+        font-size: 3vh;
+    }
+
+    
+}
